@@ -26,3 +26,8 @@ The avionics controllers responsibilities include:
   - Collision is emminent
   - Communication with main processor fails
 - Object evasion in case of near collision
+
+## Testing
+Enter the root directory
+compile `g++ -I<pwd> test.cpp -o test`
+run `./test`
