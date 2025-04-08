@@ -31,3 +31,23 @@ The avionics controllers responsibilities include:
 Enter the root directory
 compile `g++ -I<pwd> test.cpp -o test`
 run `./test`
+
+## Development
+
+Below is a table of tasks and their completion status:
+
+| Task                                | Completion Status | Assignee       | Branch          | Comment |
+|-------------------------------------|-------------------|----------------|-----------------|---------|
+| Framework for unittesting    | ⏳       | Marcus         |  | Prolly gonna use gtest |
+| Mock Arduino.h | ⏳ | Marcus | | Need more sophisticated implementation that logs some information about calls |
+| ESC | ⏳ | Marcus |  | Needs unittesting |
+| ESCs | ⏳ | Marcus |  | Needs unittesting |
+| Sonar | ⏳ | Marcus |  |  |
+| Sonars | ⏳ | Marcus |  | Can use port manipulation for extra speed. Can couple all sonars to a single trigger pin. Can use diodes pointing to interrupt in additon to individual pins to save interrupt pins. (Only have two) |
+| Scheduler | ❌ |  |  |  |
+| Sonar | ❌ |  |  | Use SPI if possible |
+| Communication with main processor | ❌ | | | |
+| Data manipulation logic | ❌ | | | |
+| Readings cache | ❌ | | | |
+
+✅ for finished, ⏳ for in progress and ❌ for not started yet
